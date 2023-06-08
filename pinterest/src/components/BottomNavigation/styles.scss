@@ -1,0 +1,19 @@
+.bottom {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px;
+  transition: transform 300ms ease-in-out 0s, opacity 300ms ease-in-out 0s;
+  background-color: #fff;
+  .active {
+    flex: 1;
+  }
+  .inactive {
+    flex: 1;
+    fill: #767676;
+  }
+}

@@ -1,0 +1,23 @@
+.img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 100ms ease-in-out;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.title-wrapper {
+  display: flex;
+  padding: 0 4px;
+  .title {
+    flex: 1;
+    overflow: hidden;;
+    word-wrap: break-word;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}

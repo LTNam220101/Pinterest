@@ -1,0 +1,62 @@
+.followCom {
+  background-color: rgba(255, 255, 255, 1);
+  height: 100vh;
+  touch-action: none;
+  transition-property: opacity;
+  transition-timing-function: ease-out;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: fixed;
+  .followCom-header {
+    display: flex;
+    margin-bottom: 16px;
+    .followCom-button {
+      padding: 16px;
+    }
+    .followCom-text {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 40px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  .follower {
+    display: flex;
+    padding: 0 16px 16px 16px;
+    .follower-left {
+      display: flex;
+      flex: 1;
+      .follower-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        align-self: center;
+      }
+      .follower-name {
+        //   font-weight: 600;
+        margin: 0 16px;
+        font-size: 16px;
+        align-self: center;
+      }
+    }
+    .follower-btn {
+      box-sizing: border-box;
+      border: 0;
+      min-width: 60px;
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 24px;
+      background-color: #111;
+      cursor: pointer;
+      font-weight: 600;
+      color: #ffffff;
+      display: flex;
+      margin: auto;
+    }
+  }
+}

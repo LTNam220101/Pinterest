@@ -1,0 +1,26 @@
+.noti {
+  display: flex;
+  justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.noti-item {
+    margin: 8px 0;
+  display: flex;
+  align-items: center;
+  .noti-item-img {
+    margin: 0 16px;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+  }
+  .noti-item-text {
+  }
+  .noti-item-time {
+    margin-left: 8px;
+    color: #5f5f5f;
+  }
+}

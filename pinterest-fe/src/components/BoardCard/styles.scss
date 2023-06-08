@@ -1,0 +1,59 @@
+.board {
+  margin-bottom: 24px;
+  .img {
+    width: calc(100% - 8px);
+    margin: 0 auto;
+  }
+  .name {
+    font-weight: 600;
+    margin-top: 4px;
+    padding: 0 8px;
+  }
+  .count {
+    margin-top: 4px;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+  .user-attributes {
+    display: flex;
+    padding: 16px 12px;
+    .user-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      cursor: pointer;
+    }
+    .user-attribute {
+      margin-left: 8px;
+      flex: 1;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .user-name {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      max-width: 100%;
+      overflow: hidden;
+      word-break: break-word;
+      -webkit-line-clamp: 1;
+      font-weight: 600;
+    }
+    .user-follower {
+    }
+    .follow-btn {
+      border: 0;
+      min-width: 80px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: #efefef;
+      cursor: pointer;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 24px;
+      font-weight: 600;
+    }
+  }
+}

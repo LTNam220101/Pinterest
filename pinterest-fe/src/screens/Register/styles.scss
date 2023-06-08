@@ -1,0 +1,81 @@
+.register {
+    .form {
+      padding: 12px 8px;
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0 24px 0;
+      .input {
+        padding: 8px 16px;
+        margin: 4px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        appearance: none;
+        border-radius: 16px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: #fff;
+        line-height: normal;
+        border-color: #cdcdcd;
+        font-size: 16px;
+        &:focus {
+          box-shadow: 0 0 0 4px rgb(0 132 255 / 50%);
+          outline: 0;
+        }
+      }
+      .error {
+        border-color: #c00;
+      }
+  
+      .feedback {
+        margin: 4px;
+        font-size: 12px !important;
+        text-align: left;
+        color: #c00;
+      }
+  
+      .forgot-password {
+        margin-top: 8px;
+        font-size: 12px;
+        color: #211922;
+        transition: transform 85ms ease-out;
+        font-weight: 600;
+      }
+      .valid {
+        background-color: #e60023 !important;
+        color: #fff !important;
+      }
+      .button {
+        margin-top: 16px;
+        border: 0;
+        min-height: 40px;
+        background-color: #efefef;
+        padding: 8px 12px;
+        border-radius: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #767676;
+      }
+    }
+    .register {
+      display: flex;
+      justify-content: center;
+    }
+    .link {
+      margin-left: 4px;
+      text-decoration: none!important;
+      transition: transform 85ms ease-out;
+      color: inherit;
+      outline: none!important;
+      font-weight: 600;
+    }
+    .policy {
+      margin-top: 20px;
+      padding: 0 16px;
+      justify-content: center;
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      color: #767676;
+    }
+  }
+  

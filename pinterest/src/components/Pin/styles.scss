@@ -1,0 +1,64 @@
+.pin {
+  padding-bottom: 72px;
+  .pin-image {
+    width: 100%;
+    padding-top: 72px;
+  }
+  .user-attributes {
+    display: flex;
+    padding: 16px 24px;
+    .user-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+    }
+    .user-attribute {
+      margin-left: 8px;
+      flex: 1;
+    }
+    .user-name {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      max-width: 100%;
+      overflow: hidden;
+      word-break: break-word;
+      -webkit-line-clamp: 1;
+      font-weight: 600;
+    }
+    .user-follower {
+    }
+    .follow-btn {
+      border: 0;
+      min-width: 80px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-color: #efefef;
+      cursor: pointer;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 24px;
+      font-weight: 600;
+    }
+  }
+  .img-attribute {
+    text-align: center;
+    .img-name {
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-weight: 600;
+      word-wrap: break-word;
+      font-size: 28px;
+    }
+    .img-des {
+    }
+  }
+  .other {
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,23 @@
+.offline-wr {
+  .offline {
+    height: 48px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    padding: 12px;
+    font-weight: 600;
+  }
+
+  .offline-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .logo-off {
+      width: 50%;
+      margin-bottom: 60px;
+    }
+  }
+}

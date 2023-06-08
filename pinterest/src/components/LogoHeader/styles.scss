@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
+  background-color: white;
+  transition: all 225ms cubic-bezier(0, 0, 0.2, 1) 500ms;
+  transform: translateY(0px);
+  padding: 12px 8px;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo_svg {
+    }
+
+    .logo_text {
+      font-weight: 600;
+      color: #c00;
+      font-size: 20px;
+      padding: 4px;
+    }
+  }
+}
