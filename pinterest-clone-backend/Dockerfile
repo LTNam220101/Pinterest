@@ -5,11 +5,11 @@ WORKDIR /user/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN yarn install
+RUN npm install
 # If you are building your code for production
-# RUN yarn ci --only=production
+# RUN npm ci --only=production
 COPY . .
-RUN yarn run build
+RUN npm run build
 
 EXPOSE 3000
 CMD [ "node", "dist/main" ]

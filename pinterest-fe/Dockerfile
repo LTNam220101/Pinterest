@@ -2,8 +2,8 @@
 FROM node:18-alpine as build-stage
 WORKDIR /app
 COPY . .
-RUN yarn install
-RUN yarn run build
+RUN npm install
+RUN npm run build
 
 # production stage
 FROM nginx:1.17-alpine as production-stage

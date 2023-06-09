@@ -19,19 +19,23 @@ services:
       - "3000:3000"
     build:
       context: ./pinterest-clone-backend
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     depends_on:
     - postgres
     environment:
     - DB_HOST=postgres
     - DB_PORT=5432
-  
+
 
   frontend:
     build:
       context: ./pinterest-fe
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     container_name: frontend
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_REST_ENDPOINT=backend/api
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
     ports:
