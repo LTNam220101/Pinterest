@@ -3,6 +3,7 @@ FROM node:18-alpine as build-stage
 WORKDIR /app
 COPY . .
 RUN npm install
+ENV REACT_APP_REST_ENDPOINT=""
 RUN npm run build
 
 # production stage

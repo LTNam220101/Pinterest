@@ -14,7 +14,7 @@ import { Server } from 'socket.io';
     origin: '*',
   },
   transports: ['websocket'],
-  namespace: 'user',
+  namespace: 'api/user',
 })
 @Injectable()
 export class UserGateway implements OnGatewayConnection, OnGatewayInit {

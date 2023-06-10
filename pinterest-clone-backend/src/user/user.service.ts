@@ -147,7 +147,7 @@ export class UserService {
     return await this.userRepo.save(user);
   }
 
-  async getAllPin(userId: number){
+  async getAllPin(userId: number) {
     const pins = await this.userRepo.findOne({
       relations: {
         pins: true,
@@ -155,7 +155,7 @@ export class UserService {
       where: {
         id: userId,
       },
-    })
+    });
     return pins;
   }
 }

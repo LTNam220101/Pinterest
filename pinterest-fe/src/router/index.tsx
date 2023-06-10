@@ -24,9 +24,11 @@ import { Socket } from "interfaces"
 import logo from "../assets/images/favicon.png"
 import { getNoti } from "components/Notification/actions"
 
-const socket = io(`${process.env.REACT_APP_REST_ENDPOINT}/user`, {
+const socket = io(`${process.env.REACT_APP_REST_ENDPOINT}/api/user`, {
   transports: ["websocket"]
 })
+
+console.log(socket)
 
 const ProtectedRoute = ({ user, redirectPath = "/login", children }: any) => {
   if (!user) {
